@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gspotlogo"
+        android:layout_marginTop="77dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:padding="20dp"
+        tools:ignore="UnresolvedResource"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="168dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#F2613F"
+            android:id="@+id/textView2"
+            android:layout_marginBottom="20dp"/>
+        <!--Email-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="15dp"
+            android:textColor="#242424"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/roundedtextbox"
+            android:textSize="15dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            android:id="@+id/emailEditText"/>
+        <!--Email end-->
+            <!--Username-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="15dp"
+            android:textColor="#242424"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/roundedtextbox"
+            android:textSize="15dp"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:id="@+id/usernameEditText"/>
+        <!--Username end-->
+        <!--Password-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="15dp"
+            android:textColor="#242424"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/roundedtextbox"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            android:id="@+id/passwordEditText"/>
+        <!--Password end-->
+        <!--Confirm Password-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="15dp"
+            android:textColor="#242424"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/roundedtextbox"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            android:id="@+id/confirmpasswordEditText"/>
+        <!--Confirm Password end-->
+        <!--Sign Up Button-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:text="Sign In"
+                android:textAllCaps="false"
+            android:backgroundTint="#F2613F"/>
+        <!--Sign Up Button end-->
+    </LinearLayout>
+    </RelativeLayout>
+    
+</ScrollView>
