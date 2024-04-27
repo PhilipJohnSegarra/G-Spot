@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,16 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/gspotlogo"
-        android:layout_marginTop="27dp"/>
+        android:layout_marginTop="77dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round_border"
         android:padding="20dp"
-        tools:ignore="UnresolvedResource"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="118dp"
+        android:layout_marginTop="168dp"
         android:minWidth="25px"
         android:minHeight="25px"
         android:orientation="vertical"
@@ -31,29 +28,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="Log In"
             android:textSize="30dp"
             android:textStyle="bold"
             android:textColor="#F2613F"
             android:id="@+id/textView2"
             android:layout_marginBottom="20dp"/>
-        <!--Email-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:textSize="15dp"
-            android:textColor="#242424"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@drawable/roundedtextbox"
-            android:textSize="15dp"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/emailEditText"/>
-        <!--Email end-->
             <!--Username-->
         <TextView
             android:layout_width="match_parent"
@@ -90,38 +70,20 @@
             android:paddingLeft="10dp"
             android:id="@+id/passwordEditText"/>
         <!--Password end-->
-        <!--Confirm Password-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Confirm Password"
-            android:textSize="15dp"
-            android:textColor="#242424"
-            android:layout_marginTop="10dp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@drawable/roundedtextbox"
-            android:textSize="15dp"
-            android:inputType="textPassword"
-            android:layout_marginTop="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/confirmpasswordEditText"/>
-        <!--Confirm Password end-->
         <!--Sign Up Button-->
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="30dp"
-                android:text="Sign Up"
+                android:text="Sign In"
                 android:textAllCaps="false"
             android:backgroundTint="#F2613F"/>
         <!--Sign Up Button end-->
     </LinearLayout>
-                <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an account?"
+            android:text="Don't have an account?"
             android:textSize="15dp"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="80dp"
@@ -131,7 +93,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign In"
+            android:text="Sign Up"
             android:textSize="15dp"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="10dp"
@@ -140,5 +102,4 @@
             android:layout_below="@+id/linearLayout"
             android:id="@+id/signInLink"/>
     </RelativeLayout>
-    
 </ScrollView>

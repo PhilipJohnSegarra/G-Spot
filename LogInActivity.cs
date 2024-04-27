@@ -12,26 +12,25 @@ using System.Text;
 
 namespace G_Spot
 {
-    [Activity(Label = "SignInActivity")]
-    public class SignInActivity : AppCompatActivity
+    [Activity(Label = "LogInActivity")]
+    public class LogInActivity : AppCompatActivity
     {
-        TextView SignIn;
+        TextView SignUp;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.SignIn);
+            SetContentView(Resource.Layout.LogIn);
 
-            // Create your application here
-            SignIn = FindViewById<TextView>(Resource.Id.signInLink);
+            SignUp = FindViewById<TextView>(Resource.Id.signInLink);
 
-            SignIn.Click += SignIn_Click;
+            SignUp.Click += SignUp_Click;
         }
 
-        private void SignIn_Click(object sender, EventArgs e)
+        private void SignUp_Click(object sender, EventArgs e)
         {
-            Intent intent = new Intent(this, typeof(LogInActivity));
+            Intent intent = new Intent(this, typeof(SignInActivity));
 
             StartActivity(intent);
         }
