@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "710300547384",
+    "project_id": "g-spot-8155d",
+    "storage_bucket": "g-spot-8155d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710300547384:android:63ff00f20f7656a1cee9cd",
+        "android_client_info": {
+          "package_name": "com.companyname.g_spot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwYl7xbLje149QNWrTgw2S6bS54BV-xhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

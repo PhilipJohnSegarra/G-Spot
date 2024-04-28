@@ -10,7 +10,17 @@
         android:layout_height="wrap_content"
         android:src="@drawable/gspotlogo"
         android:layout_gravity="center"
-        android:layout_marginTop="101dp"/>
+        android:layout_marginTop="101dp"
+        android:id="@+id/logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="The Best Gay Dating App"
+        android:textSize="19dp"
+        android:textColor="#cecece"
+        android:gravity="center"
+        android:textStyle="italic"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

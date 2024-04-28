@@ -115,7 +115,8 @@
                 android:layout_marginTop="30dp"
                 android:text="Sign Up"
                 android:textAllCaps="false"
-            android:backgroundTint="#F2613F"/>
+            android:backgroundTint="#F2613F"
+            android:id="@+id/SignUpButton"/>
         <!--Sign Up Button end-->
     </LinearLayout>
                 <TextView

@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"
+            android:text="Email"
             android:textSize="15dp"
             android:textColor="#242424"
             android:layout_marginTop="10dp"/>
@@ -47,10 +47,10 @@
             android:layout_height="45dp"
             android:background="@drawable/roundedtextbox"
             android:textSize="15dp"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:layout_marginTop="5dp"
             android:paddingLeft="10dp"
-            android:id="@+id/usernameEditText"/>
+            android:id="@+id/emailEditText"/>
         <!--Username end-->
         <!--Password-->
         <TextView
@@ -77,7 +77,8 @@
                 android:layout_marginTop="30dp"
                 android:text="Sign In"
                 android:textAllCaps="false"
-            android:backgroundTint="#F2613F"/>
+            android:backgroundTint="#F2613F"
+                android:id="@+id/SignInButton"/>
         <!--Sign Up Button end-->
     </LinearLayout>
         <TextView
