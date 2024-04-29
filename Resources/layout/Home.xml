@@ -21,4 +21,12 @@
             android:gravity="center"
             android:layout_marginTop="30dp"
             android:id="@+id/user"/>
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="Log Out"
+        android:layout_gravity="center"
+        android:backgroundTint="#F2613F"
+        android:id="@+id/logoutButton"/>
 </LinearLayout>

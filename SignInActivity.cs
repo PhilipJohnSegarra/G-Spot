@@ -81,7 +81,6 @@ namespace G_Spot
                 HashMap userMap = new HashMap();
                 userMap.Put("username", usernameEditText.Text);
                 userMap.Put("email", emailEditText.Text);
-                userMap.Put("password", PassEditText.Text);
                 DocumentReference userReference = database.Collection("UserDetails").Document(mAuth.CurrentUser.Uid);
                 userReference.Set(userMap);
                 //progress.ProgressHide();

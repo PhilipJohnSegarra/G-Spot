@@ -22,6 +22,7 @@ namespace G_Spot
     public class HomeActivity : AppCompatActivity
     {
         TextView user;
+        Button logout;
         FirebaseAuth auth;
         FirebaseUser User;
         FirebaseFirestore db;
@@ -34,6 +35,7 @@ namespace G_Spot
             SetContentView(Resource.Layout.Home);
 
             user = FindViewById<TextView>(Resource.Id.user);
+            logout = FindViewById<Button>(Resource.Id.logoutButton);
 
             auth = appDataContext.GetFirebaseAuth();
             User = auth.CurrentUser;
@@ -41,6 +43,14 @@ namespace G_Spot
             string email = User.Email;
 
             user.Text += email;
+
+            logout.Click += Logout_Click;
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            auth.SignOut();
+            StartActivity(typeof(LogInActivity));
         }
     }
 }
