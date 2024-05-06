@@ -34,23 +34,6 @@ namespace G_Spot
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Home);
 
-            user = FindViewById<TextView>(Resource.Id.user);
-            logout = FindViewById<Button>(Resource.Id.logoutButton);
-
-            auth = appDataContext.GetFirebaseAuth();
-            User = auth.CurrentUser;
-
-            string email = User.Email;
-
-            user.Text += email;
-
-            logout.Click += Logout_Click;
-        }
-
-        private void Logout_Click(object sender, EventArgs e)
-        {
-            auth.SignOut();
-            StartActivity(typeof(LogInActivity));
         }
     }
 }
