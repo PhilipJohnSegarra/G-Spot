@@ -4,71 +4,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:padding="3dp"
+        android:id="@+id/TopBar">
+        <ImageView
+             android:layout_width="100dp"
+             android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+             android:src="@drawable/gspotlogo"/>
+    </LinearLayout>
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/storiesbg"
         android:paddingTop="8dp"
         android:paddingLeft="8dp"
         android:paddingBottom="8dp"
-        android:layout_alignParentTop="true"
-        android:id="@+id/storiesView">
+
+        android:id="@+id/storiesView"
+        android:layout_below="@+id/TopBar">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
                 android:src="@drawable/story"/>
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
                 android:src="@drawable/story"/>
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
                 android:src="@drawable/story"/>
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
                 android:src="@drawable/story"/>
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
                 android:src="@drawable/story"/>
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
                 android:src="@drawable/story"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/story"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/story"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/story"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/story"/>
-            
         </LinearLayout>
     </HorizontalScrollView>
     <ScrollView
@@ -85,28 +77,28 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/post"
+                android:src="@drawable/posts"
                 />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/post"
+                android:src="@drawable/posts"
                 />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/post"
+                android:src="@drawable/posts"
                 />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/post"
+                android:src="@drawable/posts"
                 />
             
         </LinearLayout>
@@ -116,6 +108,7 @@
          android:layout_height="54dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:background="@android:color/white">
+        android:background="@drawable/botbarbg">
+
     </LinearLayout>
 </RelativeLayout>
